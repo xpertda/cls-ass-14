@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main-menu{
+    text-align: center;
+
+}
+.main-menu ul li{
+    
+    list-style: none;
+    padding: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    background: #48dbfb;
+    margin-top: 10px;
+    transition: 0.5s;
+
+}
+.main-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.main-menu ul li a:hover {
+	color: #48dbfb;
+}
+.main-menu ul li:hover{
+    background: white;
+    /* color: #48fb48; */
+}
+.main-menu ul li a {
+  display: inline-block;
+  position: relative;
+  color: #000;
+
+}
+
+.main-menu ul li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: black;
+  color: #48dbfb;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.main-menu ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.bar1{
+  background: #48dbfb;
+  height: 400px;
+  text-align: center;
+
+}
+.bar1 h6 {
+	color: white;
+	font-size: 25px;
+	padding-top: 62px;
+	font-weight: bold;
+}
+.bar1 h1 {
+	color: white;
+	font-size: 64px;
+	padding: 12px;
+	font-weight: bold;
+}
+.gbox {
+	width: 170px;
+	height: 55px;
+	background: white;
+	text-align: center;
+	margin-left: 870px;
+	border-radius: 6px;
+	padding: 11px;
+	font-size: 21px;
+	color: #dddddd;
+  position: relative;
+  z-index: 1;
+}
+.gbox::before{
+  content:'';
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  color: white;
+  border-radius: 6px; 
+  z-index: -1;
+  transition: 0.5s;
+}
+.gbox:hover::before{
+  width: 100%;
+  color: white;
+}
+.bar2{
+  background: white;
+  text-align: center;
+}
+.bar2 h1 {
+	color: rgb(0, 0, 0);
+	font-size: 40px;
+	padding-top: 80px;
+	font-weight: bold;
+	text-align: center;
+  text-transform: capitalize;
+}
+.img-mbox {
+	display: flex;
+	margin-left: 230px;
+}
+.img1{
+  overflow: hidden;
+  margin-right: 25px;
+  
+}
+.img1 img{
+  transition: all linear 0.5s;
+}
+.img1:hover img{
+  transform: rotate(360deg);
+}
+.img2{
+  overflow: hidden;
+  margin-right: 25px;
+  
+}
+.img2 img{
+  transition: all linear 0.5s;
+}
+.img2:hover img{
+  transform: rotate(45deg);
+}
+.img3{
+  overflow: hidden;
+  margin-right: 25px;
+  
+}
+.img3 img{
+  transition: all linear 0.5s;
+}
+.img3:hover img{
+  transform: rotate(-45deg);
+}
+.img4{
+  overflow: hidden;
+  margin-right: 25px;
+  
+}
+.img4 img{
+  transition: all linear 0.5s;
+}
+.img4:hover img{
+  transform: rotate(-30deg);
+}
+.img-mbox2 {
+	display: flex;
+	margin-left: 230px;
+  margin-top: 20px;
+}
+.img5{
+  overflow: hidden;
+  margin-right: 25px;
+  
+}
+.img5 img{
+  transition: all linear 0.5s;
+}
+.img5:hover img{
+  transform: rotate(35deg);
+}
+.img6{
+  overflow: hidden;
+  margin-right: 25px;
+  
+}
+.img6 img{
+  transition: all linear 0.5s;
+}
+.img6:hover img{
+  transform: rotate(360deg) scale(1.5);
+}
+.img7{
+  overflow: hidden;
+  margin-right: 25px;
+  
+}
+.img7 img{
+  transition: all linear 0.5s;
+}
+.img7:hover img{
+  transform: rotate(5deg) scale(1.2);
+}
+.img8{
+  overflow: hidden;
+  margin-right: 25px;
+  
+}
+.img8 img{
+  transition: all linear 0.5s;
+}
+.img8:hover img{
+  transform: rotate(5deg) scale(1.5);
+}
+.bar3{
+  height: 400px;
+  text-align: center;
+}
+.bar3 footer{
+  padding-top: 140px;  
+  font-size: 40px;
+  font-weight:600;
+}
+.bar3 p {
+  padding-top: 10px;
+	margin-left: 200px;
+	margin-right: 185px;
+  color: #999a9b;
+}
+.step1 {
+	width: 82px;
+	height: 45px;
+	line-height: 40px;
+	margin-left: 450px;
+	margin-top: 40px;
+	background: #000;
+	transform: rotate(-35deg);
+	color: white;
+	font-weight: bold;
+	transition: 0.5s;
+}
+.step1:hover{
+  background: #48dbfb;
+  transform: rotate(0deg);
+}
+.step2 {
+	width: 82px;
+	height: 45px;
+	line-height: 40px;
+	margin-left: 900px;
+	margin-top: -47px;
+	background: #000;
+	color: white;
+	font-weight: bold;
+	transition: 0.5s;
+}
+.step2:hover{
+  background: #48dbfb;
+  transform: rotate(0deg) scale(1.2);
+}
+.step3 {
+	width: 82px;
+	height: 45px;
+	line-height: 40px;
+	margin-left: 1366px;
+	margin-top: -45px;
+	background: #000;
+	transform: rotate(35deg);
+	color: white;
+	font-weight: bold;
+	transition: 0.5s;
+}
+.step3:hover{
+  background: #48dbfb;
+  transform: rotate(0deg);
+}
+.bar4{
+  margin-top: 10px;
+  height: 60px;
+  background: #2e2f31;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
